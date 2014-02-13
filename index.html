@@ -21,25 +21,38 @@
 	  <section>
 	    <div>
 	      <label for="sitename">Site Name:</label>
-	      <input type="text" name="sitename" value="" id="sitename" placeholder="Fowles Marsh"/>          
+	      <input type="text" name="sitename" value="" id="sitename" placeholder="Fowles Marsh" required/>          
 	    </div>
 	    <div>
 	      <label for="siteid">Site ID:</label>
-	      <input type="text" name="siteid" value="" id="siteid" placeholder="Site ID"/>
+	      <input type="text" name="siteid" value="" id="siteid" placeholder="Site ID" required/>
 	    </div>
 	    <div>
 	      <label for="date">Date:</label>
-	      <input type="date" name="date" value="" id="date" />
+	      <input type="date" name="date" value="" id="date" required/>
 	    </div>
 	    <div>
 	      <label for="recorder">Data Recorded By:</label>
-	      <input type="text" name="recorder" value="" id="recorder" list=personlist>
+	      <input type="text" name="recorder" value="" id="recorder" list=personlist required>
 	      <datalist id="personlist">
 	      	<option value="Bryan">
 	      	<option value="Ryan">
 	      	<option value="Palindrome">
 	      </datalist>
 	    </div>
+	    
+	    <div>	    
+	    <label>Your favourite fruit:
+<input type="text" name="fruit" list="fruits">
+  <datalist id="fruits">
+        <option value="Blackberry">Blackberry</option>
+        <option value="Blackcurrant">Blackcurrant</option>
+
+        <option value="Blueberry">Blueberry</option>
+        <!-- … -->
+  </datalist>
+</label>
+	    </div>	    
 	  </section>
 	</article>
 
